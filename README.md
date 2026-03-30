@@ -12,6 +12,7 @@ To decrypt, the script subtracts the index from each character’s ASCII value.
 For each character in the ciphertext:
 
 original_char = chr(ord(char) - index)
+
 💻 Code
 def decrypt_incremental_shift(ciphertext):
     decrypted = ""
@@ -25,6 +26,7 @@ def decrypt_incremental_shift(ciphertext):
 ciphertext = str(input("enter "))
 original_text = decrypt_incremental_shift(ciphertext)
 print("Original text:", original_text)
+
 🚀 Usage
 
 Clone the repository:
@@ -39,19 +41,16 @@ Run the script:
 
 python script.py
 Enter the encrypted text when prompted.
+
 🧪 Example
 
 Input:
-
 ifmmp
 
 Output:
-
 hello
+
 ⚠️ Notes
 This script assumes ASCII-based characters.
 It may produce unexpected results for non-standard or Unicode characters.
 No validation is included for malformed input.
-📄 License
-
-This project is open-source and available under the MIT License.
